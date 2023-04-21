@@ -1,0 +1,85 @@
+.accordeon-list {
+    min-width: 100%;
+    margin: 0 auto;
+}
+
+.span-element {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
+label>.span-element {
+    display: none;
+}
+.accordeon__header {
+    margin-bottom: 20px;
+}
+
+.accordeon-list:hover .span-element {
+    display: block;
+    color: black;
+}
+
+.accordeon-list:hover .accordeon-title {
+    color: black 
+}
+
+.input:checked + label>.span-element {
+    transform: rotate(45deg);
+}
+
+.input:checked + .accordeon-title {
+    color: black;
+}
+
+.input:checked ~ .accordeon-content {
+    display: block;
+}
+
+.accordeon-item {
+    width: 100%;
+    cursor: pointer;
+    margin: 2rem 0;
+   
+}
+
+.accordeon-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    background: $color-bg-add;
+    transition: color 0.4s ease-out;
+    & h4:hover {
+        color:$color-hovered;
+    }
+}
+
+.input {
+    width: 0;
+    height: 0;
+    position: absolute;
+    appearance: none;
+}
+
+.accordeon-content {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    display: none;
+    cursor: pointer;
+    text-align: center;
+    animation: 0.8s show ease;
+    @include font(2.0rem,2.4rem,normal,normal);
+}
+
+@keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+

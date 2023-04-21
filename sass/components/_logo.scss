@@ -1,0 +1,9 @@
+.header__logo-title {   
+    margin-bottom: 2px;
+}
+
+.header__logo-subtitle {
+    text-align: center;
+    @include font($size:1rem, $height:1.2rem, $weight:normal, $style:normal);
+    color:$color-black;
+}

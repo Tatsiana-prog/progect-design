@@ -1,0 +1,15 @@
+.video-content__video {
+    max-width: 1440px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video__item {
+    max-width: 100%;
+    height: 100%;
+    //*mobile
+    @media (max-width: 767px) {
+        height: 329px;
+    }
+}

@@ -1,0 +1,19 @@
+.section-catalog {
+    padding-top: 75px;
+    padding-bottom: 120px;
+    background:$color-bg-catalog;
+    box-shadow: 5px 5px 10px $color-shadow; /* Параметры тени */
+    z-index: 0;
+    .design__subtitle {
+        //*mobile
+        @media (max-width: 767px) {
+            display: none;
+        }   
+    }
+}
+.slider-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  
+}
+

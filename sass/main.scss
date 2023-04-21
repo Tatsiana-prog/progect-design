@@ -1,0 +1,46 @@
+//--style
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500&display=swap');
+
+//abstract
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/placeholders";
+
+//Components
+@import "./components/accordeon";
+@import "./components/logo";
+@import "./components/button";
+@import "./components/modal-icon";
+@import "./components/modal";
+@import "./components/media";
+
+// Base
+@import "./base/reset";
+@import "./base/typography";
+
+//Layout
+@import "./layout/header";
+@import "./layout/section-description";
+@import "./layout/section-specification";
+@import "./layout/section-service";
+@import "./layout/section-design";
+@import "./layout/section-questions";
+@import "./layout/footer";
+
+
+
+
+
+
+
+//Pages
+@import "./pages/catalog";
+@import "./pages/card-product";
+@import "./pages/service-addition-1";
+@import "./pages/service-addition-2";
+@import "./pages/service-addition-3";
+@import "./pages/about-us";
+@import "./pages/price";
+
+
+

@@ -1,0 +1,235 @@
+.section-about-us {
+    background: $color-background-about-us;  
+    padding-top: 40px;
+    padding-bottom: 100px;    
+}
+
+.about-us__header {
+    margin-bottom: 30px;
+    width: 100%;   
+}
+
+.about-us__title {
+    color:$color-heading;
+    margin-bottom: 60px;
+    text-align: center;   
+    //*tablet small
+    @media (max-width: 991px) {
+        margin-bottom: 80px;
+    }
+    //*mobile
+    @media (max-width: 767px) {
+        margin-bottom: 50px;
+    }
+    //*mobile xs
+    @media (max-width: 575px) {
+        margin-bottom: 40px;
+    }
+}
+
+.about-us__photo {   
+    width: 100%;
+    height: 860px;
+    background: url('../img/about-us/bg-image-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.about-us__description {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.about-us__first-row {
+    position: relative;
+    margin-bottom: 168px;
+     //*tablet small
+    @media (max-width: 991px) {
+        margin-bottom: 280px;
+    }   
+    //*mobile
+    @media (max-width: 767px) {
+        display: block;
+        margin-bottom: 40px;
+    }
+}
+
+.description__content {
+    margin-bottom: 78px;
+    width: 50%;
+    //*tablet small
+    @media (max-width: 991px) {
+        width: 100%;
+    }
+}
+
+.description__title {
+    color:$color-heading;
+} 
+
+.description__text {
+    @include font(2rem,2.438rem,400); 
+}
+
+.description__card-product {
+    position: absolute;
+    top:0;
+    right: -131px;
+    width: 629px;
+    height: 424px;
+    //*tablet big
+    @media (max-width: 1199px) {
+        top:50px;
+        right: -100px;
+        width: 496px;
+        height: 424px;
+    }
+    //*tablet small
+    @media (max-width: 991px) {
+        top:95px;
+        opacity: 0.3;
+    }
+    //*mobile
+    @media (max-width: 767px) {
+       opacity: 0.1;
+    }
+}
+
+.about-us__second-row {
+    position: relative;
+    margin-bottom: 100px;
+} 
+
+.employees__title {
+    position: relative;
+    width: 100%;
+    margin-right: auto;
+    margin-right: auto;
+    margin-bottom: 61px;
+    color:$color-heading;
+    text-align: left;
+    h2 {
+        width: 50%;
+        margin-right: 0;
+        margin-left: auto;
+        //*mobile
+    @media (max-width: 767px) {
+        width: 100%;
+      }
+    }        
+}
+
+.employees__title::before {
+    content:"";
+    position: absolute;
+    width: 45%;
+    height: 2px;
+    background:$color-heading;
+    top:25px;
+    left: 0px;
+    //*mobile
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.employees__poster {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us__third-row {
+    margin-bottom: 90px;
+}
+
+.direction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 25px;
+    //*mobile
+    @media (max-width: 767px) {
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+    .direction__text {
+        p, ul {
+            color:black;
+        }
+        ul {
+            padding-left: 35px;
+        }
+    }
+}   
+
+.direction__card {
+    width: 384px;
+    height: 462px;
+}
+
+.direction__content {
+    width: 50%;
+    //*mobile
+    @media (max-width: 767px) {
+       width: 100%;
+    }
+}
+
+.direction__subtitle {
+    margin-bottom: 35px;
+    h4 {
+        color: $color-text;
+        @include font(2.0rem, 2.438rem, 500);
+    }   
+}
+
+.about-us__fourth-row {
+    text-align: center;   
+}
+
+.video-content__title {
+    position: relative;
+    width: 100%;
+    margin-right: auto;
+    margin-right: auto;
+    margin-bottom: 61px;
+    color: $color-heading;
+    text-align: left;
+    h2 {
+        width: 50%;
+        //*mobile
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+}
+
+.video-content__title::before {
+    position: absolute;
+    content:"";    
+    width: 45%;
+    height: 2px;
+    background:$color-heading;
+    top:25px;
+    right: 0;
+    //*tablet big
+    @media (max-width: 1199px) {
+        right: 0;
+        width: 35%;
+    }    
+    //*mobile
+    @media (max-width: 767px) {
+      display: none;
+    }
+}
+
+.video-content {
+    width: 100%;
+    text-align: left;
+}

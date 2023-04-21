@@ -1,0 +1,139 @@
+html {
+    height: auto;
+   font-size: 10px;
+}
+
+body > * {
+    display: flex;
+    flex-direction: column;
+	flex-shrink: 0;
+    @include font($size:2.0rem, $height:2.4rem, $weight:normal, $style:normal);
+    @extend %font-prim; 
+}
+
+h1 {
+    @include font(4.8rem, 4.876rem,500 ); 
+    //*tablet big
+    @media (max-width: 1199px) {
+        @include font(4.5rem, 4.876rem,500 ); 
+    }
+    //*tablet small
+    @media (max-width: 991px) {
+        @include font(4.3rem, 4.876rem,500 ); 
+    }
+    //*mobile
+    @media (max-width: 767px) {
+        @include font(4.0rem, 4.876rem,500 ); 
+    }  
+}
+
+h2 {
+    @include font(4.0rem, 4.876rem,500);
+    //*tablet big
+    @media (max-width: 1199px) {
+        @include font(3.8rem, 4.876rem,500 ); 
+    }
+    //*tablet small
+    @media (max-width: 991px) {
+        @include font(3.5rem, 4.876rem,500 ); 
+    }
+    //*mobile
+    @media (max-width: 767px) {
+        @include font(3.3rem, 4.876rem,500 ); 
+    }      
+}
+
+h3 {
+    @include font(3.0rem, 3.657rem, 500);
+    //*tablet big
+    @media (max-width: 1199px) {
+        @include font(2.8rem, 3.657rem, 500 ); 
+    }
+    //*tablet small
+    @media (max-width: 991px) {
+        @include font(2.5rem, 3.657rem, 500 ); 
+    }
+    //*mobile
+    @media (max-width: 767px) {
+        @include font(2.5rem, 3.657rem, 500 ); 
+    }   
+}
+
+h4 {
+   @include font(2.0rem, 2.432rem, bold);
+   //*mobile
+   @media (max-width: 767px) {
+        @include font(1.8rem, 2.432rem); 
+    }   
+}
+
+h5{
+    @include font(1.5rem, 1.8rem, normal);
+}
+
+h6{
+    @include font(1rem, 1.2rem);   
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    //*tablet big
+    @media (max-width: 1199px) {
+        width: 900px;
+    }
+    //*tablet small
+    @media (max-width: 991px) {
+        width: 720px;
+    }
+    //*mobile
+    @media (max-width: 767px) {
+        width: 540px;
+       }
+    //*mobile xs
+    @media (max-width: 575px) {
+        width: 320px;
+    }
+
+    &--fluid {
+        max-width: unset;
+    }
+
+    &--no-padding {
+        padding: 0;
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        width: 900px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        width: 600px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 320px;
+    }
+}
+
+
+.none {
+	display: none !important;
+}
+
+.visually-hidden {
+    opacity: 0;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+}

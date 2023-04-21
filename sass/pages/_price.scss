@@ -1,0 +1,130 @@
+.section-price {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: $color-background;
+    box-shadow: 5px 5px 10px $color-shadow; /* Параметры тени */
+}
+
+.price-wrapper {
+    margin-bottom: 100px;
+    display: flex;
+    column-gap: 20px;
+    //*mobile
+    @media (max-width: 767px) {
+        flex-direction: column;
+        row-gap: 60px;
+    }   
+}
+
+.price__layout,.price__progect {
+    width: 50%;
+    //*mobile
+    @media (max-width: 767px) {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.layout__title, .progect__title{
+    color:$color-light;
+    padding: 30px 80px;
+    background: $color-primary;
+    border-radius: 15px;
+    margin-bottom: 60px;
+    text-align: center;
+    //*mobile
+    @media (max-width: 767px) {
+        padding: 30px 50px; 
+    }
+    //*mobile xs
+    @media (max-width: 575px) {
+        padding: 30px 10px;
+    }
+}
+
+.layout__block-1, .progect__block-1 {
+    margin-bottom: 26px;
+    text-align: left;
+}
+
+.layout__block-2,.progect__block-2 {
+    margin-bottom: 26px;
+}
+
+.layout__subtitle, .progect__subtitle{
+    display: block;
+    color:$color-black;
+}
+
+.layout__list,.progect__list {
+    padding-left: 45px;
+    list-style-type: square;
+}
+
+.layout__block-4, .progect__block-4{
+    margin: 40px 0 40px;
+}
+
+.layout__sale,.progect__sale {
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    column-gap: 5px;    
+    .span-color {
+        display: inline-block;
+        @include font(3.0rem, 3.657rem,500);
+        //*tablet small
+        @media (max-width: 991px) {
+            @include font (2.5rem, 1.2, bold);
+        }
+    }
+}
+
+.progect__block-3 {
+    margin-bottom: 40px;   
+}
+
+.layout__button,.progect__button {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.price__product-elements {
+    margin-bottom: 107px;
+}
+
+.product-elements {
+    display: flex;
+    justify-content: space-between;    
+    //*mobile
+    @media (max-width: 767px) {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+}
+
+.product-element {
+    width: 30%;    
+    //*mobile
+    @media (max-width: 767px) {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+.product-element__image {
+    margin-bottom: 38px;    
+    //*mobile
+    @media (max-width: 767px) {
+        margin-bottom: 20px;
+    }  
+}
+
+.product-element__title {
+    color:$color-black;
+    @include font(2.0rem, 2.432rem, 600);  
+}                                

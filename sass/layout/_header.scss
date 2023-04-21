@@ -1,0 +1,133 @@
+.header {
+    padding-top: 50px;
+    padding-bottom: 35px;
+    background: $color-light;
+    box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.1);
+    
+    //*tablet big
+    @media (max-width: 1199px) {
+        padding-top: 40px;
+        padding-bottom: 25px;
+    }
+    //*tablet small
+    @media (max-width: 991px) {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+    color: $color-text;
+    //*tablet big
+    @media (max-width: 1199px) {
+        column-gap: 25px;
+    }
+    //*tablet small
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+.navigation__link {
+    padding-bottom: 15px;
+    @include font($size:1.5rem, $height:1.8rem, $weight:normal, $style:normal);
+    @extend %transition;
+    cursor: pointer;
+    &:hover {
+        color: $color-hovered;
+        border-bottom: 1px solid $color-primary;
+    }
+}
+
+.header__phone {
+     //*tablet big
+     @media (max-width: 1199px) {
+       display: none;
+    }   
+}
+
+.phone {
+    display: flex;
+    column-gap: 4px;
+    text-align: center;
+    align-items: center;
+}
+.phone__icon {
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/icon/icon-phone.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+
+.phone__link { 
+    @include font($size:1.5rem, $height:1.8rem, $weight:500, $style:normal);    
+}
+
+.phone__text {
+    @include font($size:1.5rem, $height:1.8rem, $weight:500, $style:normal);
+    line-height: 1.2;
+    color:$color-text;
+}
+
+.header__basket {
+    padding: 15px 30px;
+    background: $color-background-basket;
+    border-radius: 100px;
+    cursor: pointer;
+    @extend %transition;
+    .basket {
+        display: flex;
+        column-gap: 10px;
+        justify-content: space-between;
+        align-items: center;    
+    }
+
+    .basket__icon {
+        display: block;
+        width: 60px;
+        height: 60px;          
+        background-image: url('../img/icon/basket.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+      
+    .basket__title {
+        @include font($size:1.5rem, $height:1.8rem, $weight:normal, $style:normal);
+        color:$color-light;
+    }   
+    //*tablet big
+    @media (max-width: 1199px) {
+        padding: 10px 30px;
+        column-gap: 10px;
+    }
+    //*tablet small
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.header__icon-basket {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: $color-light;
+    //*tablet big
+    @media (max-width: 1199px) {
+        width: 50px;
+        height: 50px;       
+    }
+}
